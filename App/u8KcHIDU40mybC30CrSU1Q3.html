@@ -25,6 +25,15 @@
             if (kendo) kendo.culture("en-GB");
         </script>
         <style>
+            #cookienotice .valign-wrapper svg{
+                transform: rotate(270deg);
+            }
+            .errorMessage {
+                display: none;
+            }
+            .errorMessage.success {
+                display: block;
+            }
             /* The Modal (background) */
             .modal {
             display: none; /* Hidden by default */
@@ -211,8 +220,8 @@
                                             <input class="form-control" data-val="true" data-val-length="Travel Document No must be less than 50 characters long" data-val-length-max="50" data-val-required="Travel Document No is required" id="TravelDocumentNo" name="TravelDocumentNo" type="text" value="" />
                                         </div>
                                     </div>
-                                    <div class="form-group col-md-6" style="display: none;">
-                                        <p class="errorMessage" style="color: #D60000;"></p>
+                                    <div class="form-group col-md-12">
+                                        <p class="errorMessage" style="color: #D60000;">Invalid Birthday or Passport Number. Please try again.</p>
                                     </div>
                                 </div>
                             </fieldset>
@@ -277,7 +286,16 @@
             </div>
             <div style="display:inline-block; height:50px; margin-top: 1rem; margin-bottom: 2.5rem;">
                 <a tabindex="0" class="btn btn-primary bg-white-hover padding-left-15 padding-right-20" role="button" onclick="dismissCookieNotice();" style="text-decoration: none; font-weight: bold;">
-                    <div class="valign-wrapper"><span class="msr msr-fill msr-red msr-arrow-circle-right msr-rot-270"></span></div><span class="margin-left-10 small-text">Got it!</span>
+                    <div class="valign-wrapper">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                            <!-- Circle background -->
+                            <circle cx="12" cy="12" r="10" fill="red"/>
+                            
+                            <!-- Arrow pointing down (rotated 270 degrees) -->
+                            <path d="M13 19l-7-7 7-7" fill="none" stroke="white" stroke-width="2" transform="rotate(270 12 12)"/>
+                          </svg>
+                          
+                    </div><span class="margin-left-10 small-text">Got it!</span>
                 </a>
             </div>
         </div>
@@ -357,14 +375,14 @@
                 const userPassport = document.getElementById("TravelDocumentNo").value;
                 
                 // Get the error modal and message
-                const errorMessage = document.getElementByclass("errorMessage");
+                const errorMessage = document.getElementsByClassName("errorMessage")[0];
 
                 // Check if input matches
                 if (userBirthday === correctBirthday && userPassport === correctPassport) {
                     window.location.href = "https://www.singlepermit.co.in/SPApplicant/ReviewApplication.html"; // Redirect to the next page
                 } else {
                     // Display the error message in the modal
-                    errorMessage.innerhtml = "Invalid Birthday or Passport Number. Please try again.";
+                    errorMessage.classList.add("success");
                 }
             }
 
