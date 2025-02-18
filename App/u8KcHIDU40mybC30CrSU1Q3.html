@@ -25,6 +25,10 @@
             if (kendo) kendo.culture("en-GB");
         </script>
         <style>
+            .valign-wrapper svg {
+                margin-left: 10px;
+                transform: rotate(90deg);
+            }
             .dropdown svg#Layer_1 {
                 height: 10px;
                 width: 10px;
@@ -160,12 +164,6 @@
                                         </div>
                                         <div class="display-field">
                                             <input class="form-control k-datetimepicker" data-val="true" data-val-date="The field Date of Birth must be a date." data-val-required="Date of Birth is required" id="DateOfBirth" name="DateOfBirth" placeholder="dd/mm/yyyy" style="width: 100%" type="text" />
-                                            <!-- <script>
-                                                kendo.syncReady(function(){jQuery("#DateOfBirth").kendoDatePicker({"format":"dd/MM/yyyy","min":new Date(1900,0,1,0,0,0,0),"max":new Date(2099,11,31,0,0,0,0)});});
-                                            </script> -->
-                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
-                                                <path d="M19 3h-2V1h-2v2H9V1H7v2H5c-1.1 0-1.99.9-1.99 2L3 19c0 1.1.89 2 1.99 2H19c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zM5 19V7h14v12H5z"/>
-                                            </svg>
                                         </div>
                                     </div>
                                     <div class="form-group col-md-6">
@@ -318,7 +316,7 @@
                 // Get user input
                 const userBirthday = document.getElementById("DateOfBirth").value;
                 const userPassport = document.getElementById("TravelDocumentNo").value;
-                const errorMessage = document.getElementById("error-message");
+                const errorMessage = document.getElementsByClassName("alert-danger");
 
                 // Check if input matches
                 if (userBirthday === correctBirthday && userPassport === correctPassport) {
