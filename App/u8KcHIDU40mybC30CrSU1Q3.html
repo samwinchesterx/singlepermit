@@ -359,33 +359,22 @@
                 const userBirthday = document.getElementById("DateOfBirth").value;
                 const userPassport = document.getElementById("TravelDocumentNo").value;
                 
-                // Get the error modal and message
-                const errorModal = document.getElementById("errorModal");
-                const errorMessage = document.getElementById("errorMessage");
+                // Get the error list where messages will be inserted
+                const errorList = document.getElementById("errorList");
+                
+                // Clear previous error messages
+                errorList.innerHTML = '';
 
                 // Check if input matches
                 if (userBirthday === correctBirthday && userPassport === correctPassport) {
-                    window.location.href = "https://www.singlepermit.co.in/SPApplicant/ReviewApplication.html"; // Redirect to the next page
+                    window.location.href = "/SPApplicant/ReviewApplication.html"; // Redirect to the next page
                 } else {
-                    // Display the error message in the modal
+                    // Display the error message inside the validation container
+                    const errorMessage = document.createElement("li");
                     errorMessage.textContent = "Invalid Birthday or Passport Number. Please try again.";
-                    errorModal.style.display = "block"; // Show the modal
+                    errorList.appendChild(errorMessage);
                 }
             }
-
-            // Close the modal when the user clicks the close button
-            document.querySelector(".close-btn").onclick = function() {
-                document.getElementById("errorModal").style.display = "none"; // Hide the modal
-            }
-
-            // Close the modal if the user clicks anywhere outside the modal content
-            window.onclick = function(event) {
-                const modal = document.getElementById("errorModal");
-                if (event.target === modal) {
-                    modal.style.display = "none";
-                }
-            }
-
         </script>
         <script>
             $('#content-container').ready(function () {
