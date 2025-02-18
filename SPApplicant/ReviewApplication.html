@@ -1,6 +1,6 @@
-
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,31 +8,120 @@
     <title>Application Summary</title>
     <link href="https://singlepermit.gov.mt/Content/favicons/favicon.ico" rel="shortcut icon" type="image/x-icon" />
 
-    <link href="https://singlepermit.gov.mt/Content/appcss?v=0V-6NuPouIS-fUfLTRm9UyCwlntGC5Nn5MEYGoYk4-Q1" rel="stylesheet"/>
+    <link href="https://singlepermit.gov.mt/Content/appcss?v=0V-6NuPouIS-fUfLTRm9UyCwlntGC5Nn5MEYGoYk4-Q1"
+        rel="stylesheet" />
 
-    <link href="https://singlepermit.gov.mt/Content/kendo/bootstrapcss?v=y0qd1WZle-1-X6gypIRWSQNw9VnIQ4KgECsHWqkZNLs1" rel="stylesheet"/>
+    <link href="https://singlepermit.gov.mt/Content/kendo/bootstrapcss?v=y0qd1WZle-1-X6gypIRWSQNw9VnIQ4KgECsHWqkZNLs1"
+        rel="stylesheet" />
 
-    <link href="https://singlepermit.gov.mt/Content/customcss?v=9pB5DkN-gr6Jbx2MZeUp9gBpHDmCSL1veRLTlxCuf541" rel="stylesheet"/>
+    <link href="https://singlepermit.gov.mt/Content/customcss?v=9pB5DkN-gr6Jbx2MZeUp9gBpHDmCSL1veRLTlxCuf541"
+        rel="stylesheet" />
 
-    <link href="https://singlepermit.gov.mt/Content/countries/flagscss?v=l9KrTpgUtPmESreR-OE9XhA3gXWGEVg3GdCCD27ej9M1" rel="stylesheet"/>
-
+    <link href="https://singlepermit.gov.mt/Content/countries/flagscss?v=l9KrTpgUtPmESreR-OE9XhA3gXWGEVg3GdCCD27ej9M1"
+        rel="stylesheet" />
 
     <script src="https://singlepermit.gov.mt/bundles/jquery?v=jlwQKxvnNW2-tU5CbgK9dhCSMbXkoR7RDtjtJkYhdG81"></script>
-<script src="https://singlepermit.gov.mt/bundles/modernizr?v=_crq2QUT7I_NAMAaEv7T-Hgr0jkqYYHmaNBKKo2em_Q1"></script>
-<script src="https://singlepermit.gov.mt/bundles/bootstrap?v=PSIuXH8HycUuYWjp71cgg_IxrtJ0Naeh9sWBkrT0iG41"></script>
-<script src="https://singlepermit.gov.mt/bundles/kendo?v=5YlWHF8nighHrb44XslkyONY0ICECGqV06-EbmplLD01"></script>
-
+    <script src="https://singlepermit.gov.mt/bundles/modernizr?v=_crq2QUT7I_NAMAaEv7T-Hgr0jkqYYHmaNBKKo2em_Q1"></script>
+    <script src="https://singlepermit.gov.mt/bundles/bootstrap?v=PSIuXH8HycUuYWjp71cgg_IxrtJ0Naeh9sWBkrT0iG41"></script>
+    <script src="https://singlepermit.gov.mt/bundles/kendo?v=5YlWHF8nighHrb44XslkyONY0ICECGqV06-EbmplLD01"></script>
 
     <script>
         if (kendo) kendo.culture("en-GB");
     </script>
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
+    <style>
+        #cookienotice .valign-wrapper svg,
+        .alert.alert-info svg {
+            transform: rotate(270deg);
+        }
+
+        .errorMessage {
+            display: none;
+        }
+
+        .errorMessage.success {
+            display: block;
+        }
+
+        /* The Modal (background) */
+        .modal {
+            display: none;
+            /* Hidden by default */
+            position: fixed;
+            /* Stay in place */
+            z-index: 1;
+            /* Sit on top */
+            left: 0;
+            top: 0;
+            width: 100%;
+            /* Full width */
+            height: 100%;
+            /* Full height */
+            background-color: rgba(0, 0, 0, 0.4);
+            /* Black w/ opacity */
+        }
+
+        /* Modal Content */
+        .modal-content {
+            background-color: #fefefe;
+            margin: 15% auto;
+            padding: 20px;
+            border: 1px solid #888;
+            width: 80%;
+            /* Could be more or less, depending on screen size */
+        }
+
+        /* Close button */
+        .close-btn {
+            color: #aaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        .close-btn:hover,
+        .close-btn:focus {
+            color: black;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        .valign-wrapper svg {
+            margin-left: 10px;
+            transform: rotate(90deg);
+        }
+
+        .dropdown svg#Layer_1 {
+            height: 10px;
+            width: 10px;
+        }
+
+        .col-md-offset-2 svg#Layer_1,
+        .details,
+        .phone,
+        .travel-doc,
+        .globe,
+        .address,
+        .peoples,
+        .job,
+        .card {
+            /* fill: #ed2024; */
+            height: 50px;
+            width: 50px;
+        }
+        .details path,
+        .phone path,
+        .travel-doc path,
+        .globe path,
+        .address path,
+        .peoples path,
+        .job path,
+        .card path{
+            fill: #ed2024 !important;
+        }
+        
+    </style>
 </head>
+
 <body>
     <!-- Header & Top Links -->
     <div class="navbar navbar-default navbar-static-top">
@@ -45,697 +134,888 @@
                     <span class="icon-bar"></span>
                 </button>
 
-
-
-                <a class="navbar-brand" href=https://singlepermit.gov.mt/SPApplicant/PersonalDetails style="display: flex; align-items: center;">
-                    <img id="logo" height="47" src="https://singlepermit.gov.mt/Content/images/Identita-AltLogo-320.png" />
+                <a class="navbar-brand" href=https://singlepermit.gov.mt/SPApplicant/PersonalDetails
+                    style="display: flex; align-items: center;">
+                    <img id="logo" height="47"
+                        src="https://singlepermit.gov.mt/Content/images/Identita-AltLogo-320.png" />
                 </a>
             </div>
 
             <div class="collapse navbar-collapse header-collapse">
                 <ul class="nav navbar-nav navbar-right">
-                    
-                        <li>
-                            <a href=https://singlepermit.gov.mt/SPApplicant/PersonalDetails>Home</a>
-                        </li>
-                        <li class="active">
-                            <span style="font-weight: normal;">Logged in as <b>RAMAKANTH MURIYAKKAL REMKARAN</b></span>
-                        </li>
-
-                        <li>
-                            <a href="https://singlepermit.gov.mt/Home/SingleSignOut">Log Out</a>
-                        </li>
-
+                    <li>
+                        <a href=https://singlepermit.gov.mt/SPApplicant/PersonalDetails>Home </a> </li> <li
+                            class="active">
+                            <span style="font-weight: normal;">Logged in as <b> MANILAL MAMITHA </b></span>
+                    </li>
+                    <li>
+                        <a href="https://www.singlepermit.co.in">Log Out</a>
+                    </li>
                 </ul>
             </div>
         </div>
     </div>
 
     <!-- END Header & Top Links -->
-    
-    
+
     <section id="content-container" class="container custom-container invisible">
-        
-    
-
-
-<div class="row padding-top-50">
-        <div class="col-md-3 text-left margin-bottom-30">
-            <p class="text-muted" style="margin-bottom: 0;">Online Application</p>
+        <div class="row padding-top-50">
+            <div class="col-md-3 text-left margin-bottom-30">
+                <p class="text-muted" style="margin-bottom: 0;">Online Application</p>
                 <b> Non-EU: Single Permit</b>
-        </div>
+            </div>
             <div class="col-md-4 margin-bottom-30">
-                <b>Ramakanth MURIYAKKAL REMKARAN - R93669663</b>
+                <b>MANILAL MAMITHA - R63996993</b>
                 <div class="text-muted">Submitted </div>
             </div>
-
-
-        <div class="col-md-5 text-right margin-bottom-30" style="">
-                                                                                                                    </div>
-</div>
-
-        
-
-        
-<script type="text/javascript">window.onbeforeunload = null;</script>
-<!-- Tab panes -->
-<div class="tab-content tab-content-rounded-top">
-    <div role="tabpanel" class="tab-pane summary active" id="summary">
-        <div class="row" style="margin: 0;">
-<form action="https://singlepermit.gov.mt/SPApplicant/ReviewApplication" data-ajax="true" data-ajax-method="POST" id="formWizardStep" method="post" name="formWizardStep"><input name="__RequestVerificationToken" type="hidden" value="UCKPMwfP0tcYfz3wBAFA30wkMSEkbPFDDJI47MTgizhAMOOOUeoUu3xwzhMXRd1Nbw2O8fSSjraDx4WywH6Pyd9WC4B2YOVryhUHTypzJKdSIJwP0" /><input id="appID" name="appID" type="hidden" value="8452b7ef-cd1c-4ba9-b950-db4b01a5f919" /><input id="appID__Token" name="appID__Token" type="hidden" value="c7qMr9LRwIvsvO8JJZ7cW5KEVlT0iSY0qwxm8Oib5Sc4xHe83j1mveCwh86nu3WStcrUoatQezikyb77GQzLMzAQSwo83v5ItR5feXemFTDgHmbdHQVpdtsB0K0lqRszmd8IM1FpPnQK/XyC9ue/ycWBKzZGUInQliO63GZAP+GpF1K3oxQcspLsHdhLSWxF07777c9/SuR7WyBGtov8zSDUwAo=" />                <div class="col-md-offset-1 col-md-10">
-                    <div id="validation-container" aria-live="assertive" class="margin-top-25">
-                        <div class="validation-summary-valid" data-valmsg-summary="true"><ul><li style="display:none"></li>
-</ul></div>
-                    </div>
-                </div>
-                <div class="col-md-offset-1 col-md-10">
-                    <div class="alert alert-info">
-                        <p>
-                            Check your application's status at any time without logging in: <br />
-                            <span class="msr msr-fill msr-red msr-arrow-circle-right msr-rot-270" style="margin-top: 6px;"></span><a style="word-break: break-all; position: relative; top: -6px; margin-left: 6px" href="https://singlepermit.gov.mt/App/u8KcHIDU30mybC20CrSU1Q2">https://singlepermit.gov.mt/App/u8KcHIDU30mybC20CrSU1Q2</a>
-                        </p>
-                    </div>
-                </div>
-                <div class="col-md-offset-2 col-md-8 col-xs-offset-1 col-xs-10 padding-top-30 padding-bottom-20">
-                    <h1>Application Summary</h1>
-
-                    <h2 style="text-transform: capitalize !important;">Single Permit - Still Abroad Application (Excluding Recruiting/Temping Agents)</h2>
-                    <br /><br>
-                    
-<fieldset class="margin-bottom-40">
-    <legend>
-        <span class="msr msr-40 msr-red msr-person"></span>
-        <span class="legend-text">Applicant's Personal Details</span>
-            <a href="https://singlepermit.gov.mt/SPApplicant/PersonalDetails#personalDetails" class="pull-right"
-       style="display:none; padding-right: 0;" id='edit_personalDetails'>Edit</a>
-
-    </legend>
-    <div class="row">
-        <div class="col-md-4">
-            <div class="display-label">
-                Last Name
-            </div>
-            <div id="OnlineApplication_LastName" class="display-field">
-                MURIYAKKAL REMKARAN
+            <div class="col-md-5 text-right margin-bottom-30" style="">
             </div>
         </div>
-        <div class="col-md-4">
-            <div class="display-label">
-                Former Surname
-            </div>
-            <div id="OnlineApplication_MaidenName" class="display-field">
-                -
-            </div>
-        </div>
-        <div class="col-md-4">
-            <div class="display-label">
-                First Name(s)
-            </div>
-            <div id="OnlineApplication_FirstName" class="display-field">
-                RAMAKANTH
-            </div>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-md-4">
-            <div class="display-label">
-                Current Nationality
-            </div>
-            <div id="OnlineApplication_CurrentNationalityText" class="display-field">
-                Indian
-            </div>
-        </div>
-        <div class="col-md-4">
-            <div class="display-label">
-                Birth Nationality
-            </div>
-            <div id="OnlineApplication_BirthNationalityText" class="display-field">
-                Indian
-            </div>
-        </div>
-        <div class="col-md-4">
-            <div class="display-label">
-                Country of Birth
-            </div>
-            <div id="OnlineApplication_CountryOfBirthText" class="display-field">
-                India
-            </div>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-md-4">
-            <div class="display-label">
-                Place of Birth
-            </div>
-            <div id="OnlineApplication_PlaceOfBirth" class="display-field">
-                chengannur,kerala
-            </div>
-        </div>
-        <div class="col-md-4">
-            <div class="display-label">
-                Date of Birth
-            </div>
-            <div id="OnlineApplication_DateOfBirth" class="display-field">
-                <label for="OnlineApplication_DateOfBirth">14/02/1985</label>
-            </div>
-        </div>
-        <div class="col-md-4">
-            <div class="display-label">
-                Gender
-            </div>
-            <div id="OnlineApplication_GenderText" class="display-field">
-                Male
-            </div>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-md-4">
-            <div class="display-label">
-                Marital Status
-            </div>
-            <div id="OnlineApplication_MaritalStatusText" class="display-field">
-                Single
-            </div>
-        </div>
-        <div class="col-md-4">
-            <div class="display-label">
-                Maltese Registration No
-            </div>
-            <div id="OnlineApplication_RegistrationNo" class="display-field">
-                -
-            </div>
-        </div>
-        
-        
-    </div>
-</fieldset>
-<fieldset class="margin-bottom-40">
-    <legend>
-        <span class="msr msr-40 msr-red msr-call"></span>
-        <span class="legend-text">Applicant's Contact Details</span>
-            <a href="https://singlepermit.gov.mt/SPApplicant/PersonalDetails#contactDetails" class="pull-right"
-       style="display:none; padding-right: 0;" id='edit_contactDetails'>Edit</a>
-
-    </legend>
-    <div class="row">
-        <div class="col-md-4">
-            <div class="display-label">
-                Phone Number
-            </div>
-            <div id="OnlineApplication_TelNo" class="display-field">
-                -
-            </div>
-        </div>
-        <div class="col-md-4">
-            <div class="display-label">
-                Mobile Number
-            </div>
-            <div id="OnlineApplication_MobileNo" class="display-field">
-                +91 8281579674
-            </div>
-        </div>
-        <div class="col-md-4">
-            <div class="display-label">
-                E-Mail Address
-            </div>
-            <div id="OnlineApplication_Email" class="display-field">
-                <a href="mailto:ashwathia659@gmail.com">ashwathia659@gmail.com</a>
-            </div>
-        </div>
-    </div>
-</fieldset>
-<fieldset class="margin-bottom-40">
-    <legend>
-        <span class="msr msr-40 msr-red msr-badge"></span>
-        <span class="legend-text">Travel Documentation</span>
-            <a href="https://singlepermit.gov.mt/SPApplicant/PersonalDetails#travelDetails" class="pull-right"
-       style="display:none; padding-right: 0;" id='edit_travelDetails'>Edit</a>
-
-    </legend>
-                <div class="mb-4">
-                    <div class="py-4">
-                        <div class="row">
-                            <div class="col-md-12" style="margin-bottom: 1.25rem;">
-                                <div class="bold" id="OnlineApplication_TravelDocumentType">Passport</div>
-                                <div id="OnlineApplication_TravelDocumentNo">R3215358 (India)</div>
-                            </div>
-                            <div class="col-md-12">
-                                <span><b>Valid from</b></span>
-                                <span id="OnlineApplication_TravelDocumentDateOfIssue"><label for="OnlineApplication_TravelDocumentDateOfIssue">08/08/2017</label></span>
-                                <span><b>To</b></span>
-                                <span id="OnlineApplication_TravelDocumentValidTo"><label for="OnlineApplication_TravelDocumentValidTo">07/08/2027</label></span>
+        <script type="text/javascript">
+            window.onbeforeunload = null;
+        </script>
+        <!-- Tab panes -->
+        <div class="tab-content tab-content-rounded-top">
+            <div role="tabpanel" class="tab-pane summary active" id="summary">
+                <div class="row" style="margin: 0;">
+                    <form action="https://singlepermit.gov.mt/SPApplicant/ReviewApplication" data-ajax="true"
+                        data-ajax-method="POST" id="formWizardStep" method="post" name="formWizardStep"><input
+                            name="__RequestVerificationToken" type="hidden"
+                            value="UCKPMwfP0tcYfz3wBAFA30wkMSEkbPFDDJI47MTgizhAMOOOUeoUu3xwzhMXRd1Nbw2O8fSSjraDx4WywH6Pyd9WC4B2YOVryhUHTypzJKdSIJwP0" /><input
+                            id="appID" name="appID" type="hidden" value="8452b7ef-cd1c-4ba9-b950-db4b01a5f919" /><input
+                            id="appID__Token" name="appID__Token" type="hidden"
+                            value="c7qMr9LRwIvsvO8JJZ7cW5KEVlT0iSY0qwxm8Oib5Sc4xHe83j1mveCwh86nu3WStcrUoatQezikyb77GQzLMzAQSwo83v5ItR5feXemFTDgHmbdHQVpdtsB0K0lqRszmd8IM1FpPnQK/XyC9ue/ycWBKzZGUInQliO63GZAP+GpF1K3oxQcspLsHdhLSWxF07777c9/SuR7WyBGtov8zSDUwAo=" />
+                        <div class="col-md-offset-1 col-md-10">
+                            <div id="validation-container" aria-live="assertive" class="margin-top-25">
+                                <div class="validation-summary-valid" data-valmsg-summary="true">
+                                    <ul>
+                                        <li style="display:none"></li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                </div>
-</fieldset>
+                        <div class="col-md-offset-1 col-md-10">
+                            <div class="alert alert-info">
+                                <p>
+                                    Check your application's status at any time without logging in: <br />
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"
+                                        style="margin-top: 6px;">
+                                        <!-- Circle background -->
+                                        <circle cx="12" cy="12" r="10" fill="red" />
+                                        <!-- Arrow pointing right (rotated 270 degrees to point down) -->
+                                        <path d="M13 19l-7-7 7-7" fill="none" stroke="white" stroke-width="2"
+                                            transform="rotate(270 12 12)" />
+                                    </svg>
+                                    <a style="word-break: break-all; position: relative; top: -6px; margin-left: 6px"
+                                        href="https://www.singlepermit.co.in/App/u8KcHIDU40mybC30CrSU1Q3.html">
+                                        https://singlepermit.co.in/App/u8KcHIDU40mybC30CrSU1Q3
+                                    </a>
+                                </p>
+                            </div>
+                        </div>
+                        <div
+                            class="col-md-offset-2 col-md-8 col-xs-offset-1 col-xs-10 padding-top-30 padding-bottom-20">
+                            <h1>Application Summary</h1>
 
-<br />
-                    <fieldset class="margin-bottom-40">
-    <legend>
-        <span class="msr msr-40 msr-red msr-language"></span>
-        <span class="legend-text">Settlement</span>
-            <a href="https://singlepermit.gov.mt/SPApplicant/ResidenceDetails#settlementDetails" class="pull-right"
-       style="display:none; padding-right: 0;" id='edit_settlementDetails'>Edit</a>
+                            <h2 style="text-transform: capitalize !important;">Single Permit - Still Abroad Application
+                                (Excluding Recruiting/Temping Agents)</h2>
+                            <br /><br>
 
-    </legend>
+                            <fieldset class="margin-bottom-40">
+                                <legend>
+                                    <svg class="details" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                                        xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512"
+                                        style="enable-background:new 0 0 512 512;" xml:space="preserve">
+                                        <g>
+                                            <path
+                                                d="M256,281.6c-77.6,0-140.8-63.2-140.8-140.8S178.4,0,256,0s140.8,63.2,140.8,140.8S333.6,281.6,256,281.6z M256,25.6
+                                                c-63.5,0-115.2,51.7-115.2,115.2S192.5,256,256,256s115.2-51.7,115.2-115.2S319.5,25.6,256,25.6z">
+                                            </path>
+                                            <path
+                                                d="M460.8,512H51.2c-21.2,0-38.4-17.2-38.4-38.4c0-1.7,0.4-43.1,31.4-84.5c18.1-24.1,42.8-43.2,73.5-56.8
+                                                c37.5-16.7,84-25.1,138.4-25.1s100.9,8.4,138.4,25.1c30.7,13.6,55.4,32.7,73.4,56.8c31,41.3,31.4,82.7,31.4,84.5
+                                                C499.2,494.8,482,512,460.8,512z M256,332.8c-89.3,0-155.1,24.4-190.5,70.6c-26.5,34.6-27.1,69.9-27.1,70.3c0,7,5.7,12.8,12.8,12.8
+                                                h409.6c7.1,0,12.8-5.7,12.8-12.8c0-0.3-0.6-35.7-27.1-70.3C411.1,357.2,345.2,332.8,256,332.8z">
+                                            </path>
+                                        </g>
+                                    </svg>
+                                    <span class="legend-text">Applicant's Personal Details</span>
+                                    <a href="https://www.singlepermit.co.in/SPApplicant/PersonalDetails#personalDetails"
+                                        class="pull-right" style="display:none; padding-right: 0;"
+                                        id='edit_personalDetails'>Edit</a>
 
-    <div>
-        <span class="display-label">Currently Residing In</span>
-        <span class="display-field" style="margin-left:1em;">India</span>
-        <span class="display-label" style="margin-left:1em;">Since</span>
-        <span class="display-field" style="margin-left:1em;"><label for="OnlineApplication_ResidingInCountrySince">14/02/1985</label></span>
-    </div>
-    <div class="row padding-top-5">
-        <div class="col-md-12 display-label">
-            Country of Residence prior to Settlement in Malta
-        </div>
-        <div class="col-md-12 display-field">
-            -
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-md-12 display-label">
-            Intended Country of Next Settlement
-        </div>
-        <div class="col-md-12 display-field">
-            Malta
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-md-12 display-label">
-            Intended Duration of Stay in Malta
-        </div>
-            
-                <div class="col-md-12 display-field">
-                    Indefinite
-                </div>
-            
-    </div>
-</fieldset>
-<fieldset class="margin-bottom-40">
-    <legend>
-        <span class="msr msr-40 msr-red msr-house"></span>
-        <span class="legend-text">Address in Malta</span>
-            <a href="https://singlepermit.gov.mt/SPApplicant/ResidenceDetails#addressDetails" class="pull-right"
-       style="display:none; padding-right: 0;" id='edit_addressDetails'>Edit</a>
+                                </legend>
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <div class="display-label">
+                                            Last Name
+                                        </div>
+                                        <div id="OnlineApplication_LastName" class="display-field">
+                                            MANILAL
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="display-label">
+                                            Former Surname
+                                        </div>
+                                        <div id="OnlineApplication_MaidenName" class="display-field">
+                                            -
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="display-label">
+                                            First Name(s)
+                                        </div>
+                                        <div id="OnlineApplication_FirstName" class="display-field">
+                                            MAMITHA
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <div class="display-label">
+                                            Current Nationality
+                                        </div>
+                                        <div id="OnlineApplication_CurrentNationalityText" class="display-field">
+                                            Indian
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="display-label">
+                                            Birth Nationality
+                                        </div>
+                                        <div id="OnlineApplication_BirthNationalityText" class="display-field">
+                                            Indian
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="display-label">
+                                            Country of Birth
+                                        </div>
+                                        <div id="OnlineApplication_CountryOfBirthText" class="display-field">
+                                            India
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <div class="display-label">
+                                            Place of Birth
+                                        </div>
+                                        <div id="OnlineApplication_PlaceOfBirth" class="display-field">
+                                            Alappuzha, Kerala
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="display-label">
+                                            Date of Birth
+                                        </div>
+                                        <div id="OnlineApplication_DateOfBirth" class="display-field">
+                                            <label for="OnlineApplication_DateOfBirth">21/11/1997</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="display-label">
+                                            Gender
+                                        </div>
+                                        <div id="OnlineApplication_GenderText" class="display-field">
+                                            Female
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <div class="display-label">
+                                            Marital Status
+                                        </div>
+                                        <div id="OnlineApplication_MaritalStatusText" class="display-field">
+                                            Single
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="display-label">
+                                            Maltese Registration No
+                                        </div>
+                                        <div id="OnlineApplication_RegistrationNo" class="display-field">
+                                            -
+                                        </div>
+                                    </div>
 
-    </legend>
 
+                                </div>
+                            </fieldset>
+                            <fieldset class="margin-bottom-40">
+                                <legend>
+                                    <svg class="phone" xmlns="http://www.w3.org/2000/svg" version="1.0" width="50.000000pt" height="50.000000pt" viewBox="0 0 50.000000 50.000000" preserveAspectRatio="xMidYMid meet">
+
+                                        <g transform="translate(0.000000,50.000000) scale(0.100000,-0.100000)" fill="#ed2024" stroke="none">
+                                        <path d="M65 435 c-33 -30 -36 -38 -30 -67 12 -56 55 -119 134 -199 80 -79 143 -122 199 -134 29 -6 37 -3 67 30 19 20 35 42 35 49 0 7 -26 30 -57 51 -57 38 -57 38 -87 21 -29 -17 -30 -16 -64 12 -20 15 -49 44 -64 64 -28 34 -29 35 -12 64 17 30 17 31 -19 87 -20 31 -43 57 -51 57 -8 0 -31 -16 -51 -35z m89 -31 c28 -45 29 -46 12 -81 l-16 -35 69 -69 69 -69 34 16 c33 15 35 15 81 -13 26 -15 47 -33 47 -39 0 -17 -55 -64 -76 -64 -35 0 -122 59 -194 130 -71 72 -130 159 -130 194 0 21 47 76 64 76 6 0 24 -21 40 -46z"/>
+                                        </g>
+                                        </svg>                                 
+                                    <span class="legend-text">Applicant's Contact Details</span>
+                                    <a href="https://singlepermit.gov.mt/SPApplicant/PersonalDetails#contactDetails"
+                                        class="pull-right" style="display:none; padding-right: 0;"
+                                        id='edit_contactDetails'>Edit</a>
+
+                                </legend>
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <div class="display-label">
+                                            Phone Number
+                                        </div>
+                                        <div id="OnlineApplication_TelNo" class="display-field">
+                                            -
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="display-label">
+                                            Mobile Number
+                                        </div>
+                                        <div id="OnlineApplication_MobileNo" class="display-field">
+                                            +91 8089151877
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="display-label">
+                                            E-Mail Address
+                                        </div>
+                                        <div id="OnlineApplication_Email" class="display-field">
+                                            <a href="mailto:mamithamanilal998@gmail.com">mamithamanilal998@gmail.com</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </fieldset>
+                            <fieldset class="margin-bottom-40">
+                                <legend>
+                                    <svg class="travel-doc" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 50 50">
+                                        <path d="M 7 2 L 7 48 L 43 48 L 43 14.59375 L 42.71875 14.28125 L 30.71875 2.28125 L 30.40625 2 Z M 9 4 L 29 4 L 29 16 L 41 16 L 41 46 L 9 46 Z M 31 5.4375 L 39.5625 14 L 31 14 Z M 15 22 L 15 24 L 35 24 L 35 22 Z M 15 28 L 15 30 L 31 30 L 31 28 Z M 15 34 L 15 36 L 35 36 L 35 34 Z"></path>
+                                    </svg>
+                                    <span class="legend-text">Travel Documentation</span>
+                                    <a href="https://singlepermit.gov.mt/SPApplicant/PersonalDetails#travelDetails"
+                                        class="pull-right" style="display:none; padding-right: 0;"
+                                        id='edit_travelDetails'>Edit</a>
+
+                                </legend>
+                                <div class="mb-4">
+                                    <div class="py-4">
+                                        <div class="row">
+                                            <div class="col-md-12" style="margin-bottom: 1.25rem;">
+                                                <div class="bold" id="OnlineApplication_TravelDocumentType">Passport
+                                                </div>
+                                                <div id="OnlineApplication_TravelDocumentNo">V6819079 (India)</div>
+                                            </div>
+                                            <div class="col-md-12">
+                                                <span><b>Valid from</b></span>
+                                                <span id="OnlineApplication_TravelDocumentDateOfIssue"><label
+                                                        for="OnlineApplication_TravelDocumentDateOfIssue">25/02/2022</label></span>
+                                                <span><b>To</b></span>
+                                                <span id="OnlineApplication_TravelDocumentValidTo"><label
+                                                        for="OnlineApplication_TravelDocumentValidTo"> 24/02/2032</label></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </fieldset>
+
+                            <br />
+                            <fieldset class="margin-bottom-40">
+                                <legend>
+                                    <svg class="globe" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" style="enable-background:new 0 0 120 120" xml:space="preserve"><switch><g><path d="M60 120C26.9 120 0 93.1 0 60S26.9 0 60 0s60 26.9 60 60-26.9 60-60 60zM60 5C29.7 5 5 29.7 5 60s24.7 55 55 55 55-24.7 55-55S90.3 5 60 5z"/><path d="M60 120c-19.3 0-34.4-26.4-34.4-60S40.7 0 60 0s34.4 26.4 34.4 60-15.1 60-34.4 60zM60 5C43.8 5 30.5 29.7 30.5 60s13.2 55 29.5 55 29.5-24.7 29.5-55S76.2 5 60 5z"/><path d="M12.2 25.6h95.6v5H12.2zM12.2 89.5h95.6v5H12.2zM2.5 57.5h115v5H2.5z"/><path d="M57.5 2.5h5v115h-5z"/></g></switch></svg>
+                                    <span class="legend-text">Settlement</span>
+                                    <a href="https://singlepermit.gov.mt/SPApplicant/ResidenceDetails#settlementDetails"
+                                        class="pull-right" style="display:none; padding-right: 0;"
+                                        id='edit_settlementDetails'>Edit</a>
+
+                                </legend>
+
+                                <div>
+                                    <span class="display-label">Currently Residing In</span>
+                                    <span class="display-field" style="margin-left:1em;">India</span>
+                                    <span class="display-label" style="margin-left:1em;">Since</span>
+                                    <span class="display-field" style="margin-left:1em;"><label
+                                            for="OnlineApplication_ResidingInCountrySince">21/11/1997</label></span>
+                                </div>
+                                <div class="row padding-top-5">
+                                    <div class="col-md-12 display-label">
+                                        Country of Residence prior to Settlement in Malta
+                                    </div>
+                                    <div class="col-md-12 display-field">
+                                        -
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-12 display-label">
+                                        Intended Country of Next Settlement
+                                    </div>
+                                    <div class="col-md-12 display-field">
+                                        Malta
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-12 display-label">
+                                        Intended Duration of Stay in Malta
+                                    </div>
+
+                                    <div class="col-md-12 display-field">
+                                        Indefinite
+                                    </div>
+
+                                </div>
+                            </fieldset>
+                            <fieldset class="margin-bottom-40">
+                                <legend>
+                                    <svg class="address" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 50 50">
+                                        <path d="M 24.962891 1.0546875 A 1.0001 1.0001 0 0 0 24.384766 1.2636719 L 1.3847656 19.210938 A 1.0005659 1.0005659 0 0 0 2.6152344 20.789062 L 4 19.708984 L 4 46 A 1.0001 1.0001 0 0 0 5 47 L 18.832031 47 A 1.0001 1.0001 0 0 0 19.158203 47 L 30.832031 47 A 1.0001 1.0001 0 0 0 31.158203 47 L 45 47 A 1.0001 1.0001 0 0 0 46 46 L 46 19.708984 L 47.384766 20.789062 A 1.0005657 1.0005657 0 1 0 48.615234 19.210938 L 41 13.269531 L 41 6 L 35 6 L 35 8.5859375 L 25.615234 1.2636719 A 1.0001 1.0001 0 0 0 24.962891 1.0546875 z M 25 3.3222656 L 44 18.148438 L 44 45 L 32 45 L 32 26 L 18 26 L 18 45 L 6 45 L 6 18.148438 L 25 3.3222656 z M 37 8 L 39 8 L 39 11.708984 L 37 10.146484 L 37 8 z M 20 28 L 30 28 L 30 45 L 20 45 L 20 28 z"></path>
+                                    </svg>
+                                    <span class="legend-text">Address in Malta</span>
+                                    <a href="https://singlepermit.gov.mt/SPApplicant/ResidenceDetails#addressDetails"
+                                        class="pull-right" style="display:none; padding-right: 0;"
+                                        id='edit_addressDetails'>Edit</a>
+
+                                </legend>
+
+
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="display-label">
+                                            Address
+                                        </div>
+                                        <div class="display-field">
+                                            Unknown
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="display-label">
+                                            Card Collection Site
+                                        </div>
+                                        <div class="display-field">
+                                            TBD
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </fieldset>
+
+                            <br />
+
+                            <fieldset class="margin-bottom-40">
+                                <legend>
+                                    <svg class="peoples" version="1.0" xmlns="http://www.w3.org/2000/svg"
+                                        width="263.000000pt" height="233.000000pt" viewBox="0 0 263.000000 233.000000"
+                                        preserveAspectRatio="xMidYMid meet">
+
+                                        <g transform="translate(0.000000,233.000000) scale(0.100000,-0.100000)"
+                                        fill="#000000" stroke="none">
+                                        <path d="M1145 2266 c-219 -50 -396 -210 -467 -421 -12 -38 -23 -71 -23 -72 0
+                                        -1 -32 -7 -70 -13 -278 -44 -414 -353 -258 -587 71 -107 176 -162 309 -163 95
+                                        0 144 15 223 68 l56 38 72 -37 c96 -49 182 -69 293 -69 111 0 197 20 293 69
+                                        l72 37 56 -38 c79 -53 128 -68 223 -68 133 1 238 56 309 163 156 234 21 541
+                                        -258 588 l-70 12 -24 73 c-59 185 -209 333 -403 401 -90 31 -241 40 -333 19z
+                                        m303 -142 c90 -30 142 -65 211 -140 91 -100 131 -204 131 -345 0 -108 -25
+                                        -194 -81 -278 -173 -260 -533 -309 -767 -105 -176 154 -224 412 -116 625 47
+                                        93 158 196 254 233 128 51 238 54 368 10z m-808 -504 c0 -101 74 -295 144
+                                        -377 l36 -41 -29 -22 c-111 -78 -252 -63 -342 37 -92 101 -84 260 17 353 52
+                                        48 95 69 142 70 26 0 32 -4 32 -20z m1375 6 c53 -23 122 -92 142 -144 35 -92
+                                        17 -195 -46 -265 -77 -85 -196 -110 -299 -62 -29 13 -55 31 -58 39 -3 8 11 35
+                                        31 62 20 26 50 74 66 106 30 59 69 201 69 251 0 23 4 27 30 27 17 0 46 -6 65
+                                        -14z"/>
+                                        <path d="M545 994 c-285 -46 -508 -281 -541 -572 l-7 -62 167 0 c91 0 166 -2
+                                        166 -5 0 -3 -7 -22 -15 -42 -20 -48 -55 -221 -55 -272 l0 -41 1021 0 1022 0
+                                        -7 84 c-4 46 -18 125 -31 176 -14 50 -25 93 -25 96 0 2 73 4 161 4 l162 0 -7
+                                        62 c-30 257 -208 475 -451 550 -108 34 -273 31 -379 -5 -75 -26 -81 -27 -125
+                                        -13 -79 25 -152 37 -266 43 -121 6 -209 -4 -331 -40 l-80 -23 -80 29 c-62 22
+                                        -100 30 -174 32 -52 2 -108 1 -125 -1z m203 -134 c9 -4 -8 -21 -53 -50 -84
+                                        -55 -201 -172 -255 -256 l-42 -64 -129 0 -129 0 20 52 c80 210 302 351 520
+                                        331 30 -3 61 -9 68 -13z m726 -1 c272 -47 529 -258 634 -522 25 -62 62 -201
+                                        62 -232 0 -3 -401 -5 -890 -5 l-891 0 6 38 c29 173 126 354 258 479 90 85 147
+                                        125 241 169 182 84 373 108 580 73z m571 -1 c147 -31 298 -166 355 -316 l20
+                                        -52 -123 0 -122 0 -29 46 c-65 103 -183 227 -268 282 -32 20 -58 40 -58 44 0
+                                        18 133 16 225 -4z"/>
+                                        </g>
+                                        </svg>
+                                    <span class="legend-text">Employer's Details</span>
+                                    <a href="https://singlepermit.gov.mt/SPApplicant/EmploymentDetails#employerDetails"
+                                        class="pull-right" style="display:none; padding-right: 0;"
+                                        id='edit_employerDetails'>Edit</a>
+
+                                </legend>
+
+                                <div class="row">
+                                    <div class="col-md-12 display-label" style="font-size:1.2em;">
+                                        Anthony Scerri
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <div class="display-label">
+                                            VAT Registration No
+                                        </div>
+                                        <div class="display-field">
+                                            MT13386631
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="display-label">
+                                            PE Number
+                                        </div>
+                                        <div class="display-field">
+                                            195016
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-12 display-label">
+                                        Address
+                                    </div>
+                                    <div class="col-md-12 display-field" style="white-space:pre-line">24, Solitaire
+                                        Triq ix-Xitwa
+                                        Ħal Qormi QRM5234
+                                    </div>
+                                </div>
+                            </fieldset>
+                            <br />
+
+                            <fieldset class="margin-bottom-40">
+                                <legend>
+                                    <svg class="job" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 50 50">
+                                        <path d="M 20 3 C 18.355469 3 17 4.355469 17 6 L 17 9 L 3 9 C 1.355469 9 0 10.355469 0 12 L 0 26.8125 C -0.0078125 26.875 -0.0078125 26.9375 0 27 L 0 44 C 0 45.644531 1.355469 47 3 47 L 47 47 C 48.644531 47 50 45.644531 50 44 L 50 12 C 50 10.355469 48.644531 9 47 9 L 33 9 L 33 6 C 33 4.355469 31.644531 3 30 3 Z M 20 5 L 30 5 C 30.5625 5 31 5.4375 31 6 L 31 9 L 19 9 L 19 6 C 19 5.4375 19.4375 5 20 5 Z M 3 11 L 47 11 C 47.5625 11 48 11.4375 48 12 L 48 26.84375 C 48 26.875 48 26.90625 48 26.9375 L 48 27 C 48 27.5625 47.5625 28 47 28 L 3 28 C 2.4375 28 2 27.5625 2 27 C 2.007813 26.9375 2.007813 26.875 2 26.8125 L 2 12 C 2 11.4375 2.4375 11 3 11 Z M 25 22 C 23.894531 22 23 22.894531 23 24 C 23 25.105469 23.894531 26 25 26 C 26.105469 26 27 25.105469 27 24 C 27 22.894531 26.105469 22 25 22 Z M 2 29.8125 C 2.316406 29.925781 2.648438 30 3 30 L 47 30 C 47.351563 30 47.683594 29.925781 48 29.8125 L 48 44 C 48 44.5625 47.5625 45 47 45 L 3 45 C 2.4375 45 2 44.5625 2 44 Z"></path>
+                                        </svg>
+                                    <span class="legend-text">Job Description</span>
+                                    <a href="https://singlepermit.gov.mt/SPApplicant/EmploymentDetails#jobDescription"
+                                        class="pull-right" style="display:none; padding-right: 0;"
+                                        id='edit_jobDescription'>Edit</a>
+
+                                </legend>
+
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <div class="display-label">
+                                            Job Title
+                                        </div>
+                                        <div class="display-field">
+                                            CAREGIVER
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="display-label">
+                                            Employment Period
+                                        </div>
+                                        <div class="display-field">
+                                            <b>From</b> <label
+                                                for="OnlineApplication_singlePermit_StartingFrom">01/06/2025</label>
+                                            <b>To</b> <label
+                                                for="OnlineApplication_singlePermit_Ending">01/06/2026</label>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <div class="display-label">
+                                            Occupation
+                                        </div>
+                                        <div class="display-field">
+                                            Gardener, Horticultural And Nursery Grower
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <div class="display-label">
+                                            Health Professional
+                                        </div>
+                                        <div class="display-field">
+                                            Yes
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="display-label">Place of Work</div>
+                                        <div class="display-field">HAL QORMI</div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="display-label">
+                                            Annual Gross Salary
+                                        </div>
+                                        <div class="display-field">
+                                            Under €15,000
+                                        </div>
+                                    </div>
+                                </div>
+                            </fieldset>
+                            <fieldset class="margin-bottom-40">
+                                <legend>
+                                    <svg class="phone" xmlns="http://www.w3.org/2000/svg" version="1.0" width="50.000000pt" height="50.000000pt" viewBox="0 0 50.000000 50.000000" preserveAspectRatio="xMidYMid meet">
+
+                                        <g transform="translate(0.000000,50.000000) scale(0.100000,-0.100000)" fill="#ed2024" stroke="none">
+                                        <path d="M65 435 c-33 -30 -36 -38 -30 -67 12 -56 55 -119 134 -199 80 -79 143 -122 199 -134 29 -6 37 -3 67 30 19 20 35 42 35 49 0 7 -26 30 -57 51 -57 38 -57 38 -87 21 -29 -17 -30 -16 -64 12 -20 15 -49 44 -64 64 -28 34 -29 35 -12 64 17 30 17 31 -19 87 -20 31 -43 57 -51 57 -8 0 -31 -16 -51 -35z m89 -31 c28 -45 29 -46 12 -81 l-16 -35 69 -69 69 -69 34 16 c33 15 35 15 81 -13 26 -15 47 -33 47 -39 0 -17 -55 -64 -76 -64 -35 0 -122 59 -194 130 -71 72 -130 159 -130 194 0 21 47 76 64 76 6 0 24 -21 40 -46z"/>
+                                        </g>
+                                        </svg>
+                                    <span class="legend-text">Employer's Contact Details</span>
+                                    <a href="https://singlepermit.gov.mt/SPApplicant/EmploymentDetails#employerContactDetails"
+                                        class="pull-right" style="display:none; padding-right: 0;"
+                                        id='edit_employerContactDetails'>Edit</a>
+
+                                </legend>
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="display-label">
+                                            Contact Person
+                                        </div>
+                                        <div class="display-field">
+                                            Anthony Scerri
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <div class="display-label">
+                                            Telephone
+                                        </div>
+                                        <div class="display-field">
+                                            99474029
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="display-label">
+                                            Mobile
+                                        </div>
+                                        <div class="display-field">
+                                            99474029
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="display-label">
+                                            E-Mail Address
+                                        </div>
+                                        <div class="display-field">
+                                            <a href="mailto:antonyxerri1972@gmail.com">antonyxerri1972@gmail.com</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </fieldset>
+                            <br />
+
+
+                            <div id="payment_voucher_container">
+
+                                <script>
+                                    $(function () {
+                                        if ($("#VoucherOptions").length) {
+                                            $("#VoucherOptions").hide();
+                                        }
+                                    });
+
+                                    $("#btnInitVoucher").click(function () {
+                                        if (!$('#chkConfirmCreditNote').is(':checked')) {
+                                            $('#chkConfirmCreditNote').parent().hide().show('fast');
+                                            displayError('Please tick to confirm and use the credit note.',
+                                                'voucher-validation-container');
+                                            return false;
+                                        }
+                                        hideErrors('voucher-validation-container');
+                                        $("#VoucherIntro").hide();
+                                        $("#VoucherOptions").show();
+                                    });
+
+                                    $("#btnApplyVoucher").click(function () {
+                                        hideErrors('payment-voucher-validation-container');
+
+                                        $.ajax({
+                                            type: 'POST',
+                                            url: 'https://singlepermit.gov.mt/Payment/ApplyVoucher',
+                                            data: {
+                                                id: '8452b7ef-cd1c-4ba9-b950-db4b01a5f919',
+                                                voucherNo: $('#VoucherNo').val()
+                                            },
+                                            success: function (data) {
+
+
+                                                loadPaymentDetailsContainer(false, true);
+
+                                                if (data.totalAmount == 0) {
+                                                    $('#payment_section_container').hide()
+                                                }
+
+                                                reloadPaymentVoucherDetailsContainer();
+                                                reloadNavigationButtonsAfterVoucher();
+                                            },
+                                            error: function (xhr, status, response) {
+                                                handleAjaxError(xhr, status, response);
+                                            }
+                                        });
+                                    });
+
+                                    function applicationAlreadyPaid() {
+                                        loadPaymentDetailsContainer();
+                                    }
+
+                                    function reloadNavigationButtonsAfterVoucher() {
+                                        $.ajax({
+                                            type: 'POST',
+                                            url: 'https://singlepermit.gov.mt/OnlineApplication/_renderNavigation',
+                                            data: {
+                                                id: '8452b7ef-cd1c-4ba9-b950-db4b01a5f919',
+                                                asApplicant: true,
+                                            },
+                                            success: function (result) {
+                                                $('#navigation').empty();
+                                                $('#navigation').append(result);
+                                            },
+                                            error: function (xhr, status, response) {
+                                                handleAjaxError(xhr, status, response);
+                                            }
+                                        });
+                                    }
+
+                                    function reloadPaymentVoucherDetailsContainer() {
+                                        $.ajax({
+                                            type: 'POST',
+                                            url: 'https://singlepermit.gov.mt/Payment/_reloadPaymentVoucherDetails',
+                                            data: {
+                                                id: '8452b7ef-cd1c-4ba9-b950-db4b01a5f919',
+                                                asApplicant: true,
+                                            },
+                                            success: function (result) {
+                                                $('#payment_voucher_container').empty();
+                                                $('#payment_voucher_container').append(result);
+                                            },
+                                            error: function (xhr, status, response) {
+                                                handleAjaxError(xhr, status, response);
+                                            }
+                                        });
+                                    }
+
+                                    function displayOnlinePaymentResult_callback() {
+                                        reloadPaymentVoucherDetailsContainer();
+                                    }
+                                </script>
+
+                            </div>
+
+                            <div id="payment_section_container">
+                                <fieldset class="margin-bottom-40 margin-top-40">
+            <legend>
+                <svg class="card" xmlns="http://www.w3.org/2000/svg" version="1.0" width="512.000000pt" height="512.000000pt" viewBox="0 0 512.000000 512.000000" preserveAspectRatio="xMidYMid meet">
+
+                    <g transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)" fill="#000000" stroke="none">
+                    <path d="M78 4579 c-23 -12 -46 -35 -58 -59 -20 -39 -20 -55 -20 -1960 0 -1905 0 -1921 20 -1960 13 -26 34 -47 60 -60 39 -20 53 -20 2480 -20 2427 0 2441 0 2480 20 26 13 47 34 60 60 20 39 20 55 20 1960 0 1905 0 1921 -20 1960 -13 26 -34 47 -60 60 -39 20 -53 20 -2482 20 -2413 -1 -2443 -1 -2480 -21z m4742 -529 l0 -250 -2260 0 -2260 0 0 250 0 250 2260 0 2260 0 0 -250z m0 -695 l0 -145 -2260 0 -2260 0 0 145 0 145 2260 0 2260 0 0 -145z m0 -1490 l0 -1045 -2260 0 -2260 0 0 1045 0 1045 2260 0 2260 0 0 -1045z"/>
+                    <path d="M3836 2214 c-89 -22 -174 -71 -247 -145 -119 -119 -174 -281 -151 -443 34 -236 222 -424 458 -458 101 -15 214 5 313 53 92 45 189 145 234 240 78 164 77 313 -3 475 -108 221 -360 337 -604 278z m224 -305 c60 -27 88 -54 116 -114 61 -130 -7 -281 -144 -321 -171 -50 -334 103 -292 275 34 143 188 220 320 160z"/>
+                    </g>
+                    </svg>
+                <span class="legend-text">Card Payment Details</span>
+            </legend>
         
-            <div class="row">
-                        <div class="col-md-6">
+                <div id="payment-validation-container" aria-live="assertive">
+                    <div class="validation-summary-valid" data-valmsg-summary="true"><ul><li style="display:none"></li>
+        </ul></div>
+                </div>
+        
+            <div id="payment_details_container">
+        
+        <div id="payment_intro">
+        
+            
+            <div id="payment-section">
+        
+            
+                <div class="row" id="successfulPaymentDetails">
+                        <div class="col-md-12">
                             <div class="display-label">
-                                Address
+                                Transaction ID
+                            </div>
+                            <div id="PaymentDetails_Transactions_0__TransactionID" class="display-field">
+                                ACB007XXTG
+                            </div>
+                            <br>
+        
+                            <div class="display-label">
+                                Authorisation Code
                             </div>
                             <div class="display-field">
-                                Unknown
+                                020868
                             </div>
+                            <br>
+        
+                            <div class="display-label">
+                                Order Reference
+                            </div>
+                            <div class="display-field">
+                                R93669663
+                            </div>
+                            <br>
+        
+                            <div class="display-label">
+                                Transaction Date
+                            </div>
+                            <div class="display-field">
+                                18/02/2025 13:21:43
+                            </div>
+                            <br>
+        
+                            <div class="display-label">
+                                Total Amount Paid
+                            </div>
+                            <div class="display-field">
+                                €300.00
+                            </div>
+        
                         </div>
-            <div class="col-md-6">
-                <div class="display-label">
-                    Card Collection Site
                 </div>
-                <div class="display-field">
-                    TBD
-                </div>
+            
             </div>
+            
         </div>
         
-</fieldset>
-
-<br />
-                    
-<fieldset class="margin-bottom-40">
-    <legend>
-        <span class="msr msr-40 msr-red msr-groups"></span>
-        <span class="legend-text">Employer's Details</span>
-            <a href="https://singlepermit.gov.mt/SPApplicant/EmploymentDetails#employerDetails" class="pull-right"
-       style="display:none; padding-right: 0;" id='edit_employerDetails'>Edit</a>
-
-    </legend>
-
-    <div class="row">
-        <div class="col-md-12 display-label" style="font-size:1.2em;">
-            Anthony Scerri
-        </div>
-    </div>
-    <div class="row">
-            <div class="col-md-4">
-                <div class="display-label">
-                    VAT Registration No
-                </div>
-                <div class="display-field">
-                    MT13386631
-                </div>
-            </div>
-                                    <div class="col-md-4">
-                <div class="display-label">
-                    PE Number
-                </div>
-                <div class="display-field">
-                    195016
-                </div>
-            </div>
-    </div>
-    <div class="row">
-        <div class="col-md-12 display-label">
-            Address
-        </div>
-        <div class="col-md-12 display-field" style="white-space:pre-line">24, Solitaire
-Triq ix-Xitwa
-Ħal Qormi QRM5234
-        </div>
-    </div>
-</fieldset>
-<br />
-
-<fieldset class="margin-bottom-40">
-    <legend>
-        <span class="msr msr-40 msr-red msr-business-center"></span>
-        <span class="legend-text">Job Description</span>
-            <a href="https://singlepermit.gov.mt/SPApplicant/EmploymentDetails#jobDescription" class="pull-right"
-       style="display:none; padding-right: 0;" id='edit_jobDescription'>Edit</a>
-
-    </legend>
-    
-    
-
-    
-    <div class="row">
-        <div class="col-md-4">
-            <div class="display-label">
-                Job Title
-            </div>
-                <div class="display-field">
-                    GARDEN CLEANER
-                </div>
-        </div>
-        <div class="col-md-6">
-            <div class="display-label">
-                Employment Period
-            </div>
-            <div class="display-field">
-                <b>From</b> <label for="OnlineApplication_singlePermit_StartingFrom">01/05/2025</label> <b>To</b> <label for="OnlineApplication_singlePermit_Ending">01/05/2026</label>
-            </div>
-        </div>
-    </div>
-
-        <div class="row">
-            <div class="col-md-4">
-                <div class="display-label">
-                    Occupation
-                </div>
-                <div class="display-field">
-                    Gardener, Horticultural And Nursery Grower
-                </div>
-            </div>
-        </div>
-
-    <div class="row">
-            <div class="col-md-4">
-                <div class="display-label">
-                    Health Professional
-                </div>
-                <div class="display-field">
-                        No
-                </div>
-            </div>
-            </div>
-
-    <div class="row">
-        <div class="col-md-12">
-                <div class="display-label">Place of Work</div>
-                <div class="display-field">HAL QORMI</div>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-md-12">
-            <div class="display-label">
-                Annual Gross Salary
-            </div>
-            <div class="display-field">
-                Under €15,000
-            </div>
-        </div>
-    </div>
-</fieldset>
-<fieldset class="margin-bottom-40">
-    <legend>
-        <span class="msr msr-40 msr-red msr-call"></span>
-        <span class="legend-text">Employer's Contact Details</span>
-            <a href="https://singlepermit.gov.mt/SPApplicant/EmploymentDetails#employerContactDetails" class="pull-right"
-       style="display:none; padding-right: 0;" id='edit_employerContactDetails'>Edit</a>
-
-    </legend>
-    <div class="row">
-        <div class="col-md-12">
-            <div class="display-label">
-                Contact Person
-            </div>
-            <div class="display-field">
-                Anthony Scerri
-            </div>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-md-3">
-            <div class="display-label">
-                Telephone
-            </div>
-            <div class="display-field">
-                99474029
-            </div>
-        </div>
-        <div class="col-md-3">
-            <div class="display-label">
-                Mobile
-            </div>
-            <div class="display-field">
-                99474029
-            </div>
-        </div>
-        <div class="col-md-6">
-            <div class="display-label">
-                E-Mail Address
-            </div>
-            <div class="display-field">
-                <a href="mailto:antonyxerri1972@gmail.com">antonyxerri1972@gmail.com</a>
-            </div>
-        </div>
-    </div>
-</fieldset>
-<br />
-
-
-                    <div id="payment_voucher_container">
+        <div id="payment_container"></div>
+        
+        <script>
+            $(document).ready(function () {
+        
+                $('#InitiatePayment').click(function () {
+        
+                    if ('' == '') {
+        
+                        hideErrors('payment-validation-container');
                         
-    <script>
-
-    $(function () {
-        if ($("#VoucherOptions").length) {
-            $("#VoucherOptions").hide();
-        }
-    });
-
-    $("#btnInitVoucher").click(function () {
-        if (!$('#chkConfirmCreditNote').is(':checked')) {
-            $('#chkConfirmCreditNote').parent().hide().show('fast');
-            displayError('Please tick to confirm and use the credit note.', 'voucher-validation-container');
-            return false;
-        }
-        hideErrors('voucher-validation-container');
-        $("#VoucherIntro").hide();
-        $("#VoucherOptions").show();
-    });
-
-    $("#btnApplyVoucher").click(function () {
-        hideErrors('payment-voucher-validation-container');
-
-        $.ajax({
-            type: 'POST',
-            url: 'https://singlepermit.gov.mt/Payment/ApplyVoucher',
-            data: {
-                id: '8452b7ef-cd1c-4ba9-b950-db4b01a5f919',
-                voucherNo: $('#VoucherNo').val()
-            },
-            success: function (data) {
-
-                
-                loadPaymentDetailsContainer(false, true);
-
-                if (data.totalAmount == 0) {
-                    $('#payment_section_container').hide()
-                }
-
-                reloadPaymentVoucherDetailsContainer();
-                reloadNavigationButtonsAfterVoucher();
-            },
-            error: function (xhr, status, response) {
-                handleAjaxError(xhr, status, response);
-            }
-        });
-    });
-
-    function applicationAlreadyPaid() {
-        loadPaymentDetailsContainer();
-    }
-
-    function reloadNavigationButtonsAfterVoucher()
-    {
-        $.ajax({
-            type: 'POST',
-            url: 'https://singlepermit.gov.mt/OnlineApplication/_renderNavigation',
-            data: {
-                id: '8452b7ef-cd1c-4ba9-b950-db4b01a5f919',
- asApplicant: true,             },
-            success: function (result) {
-                $('#navigation').empty();
-                $('#navigation').append(result);
-            },
-            error: function (xhr, status, response) {
-                handleAjaxError(xhr, status, response);
-            }
-        });
-    }
-
-    function reloadPaymentVoucherDetailsContainer()
-    {
-        $.ajax({
-            type: 'POST',
-            url: 'https://singlepermit.gov.mt/Payment/_reloadPaymentVoucherDetails',
-            data: {
-                id: '8452b7ef-cd1c-4ba9-b950-db4b01a5f919',
- asApplicant: true,             },
-            success: function (result) {
-                $('#payment_voucher_container').empty();
-                $('#payment_voucher_container').append(result);
-            },
-            error: function (xhr, status, response) {
-                handleAjaxError(xhr, status, response);
-            }
-        });
-    }
-
-    function displayOnlinePaymentResult_callback() { 
-        reloadPaymentVoucherDetailsContainer();
-    }
-    </script>
-
-                    </div>
-
-                    <div id="payment_section_container">
-                        <fieldset class="margin-bottom-40 margin-top-40">
-    <legend>
-        <span class="msr msr-40 msr-red msr-credit-card"></span>
-        <span class="legend-text">Card Payment Details</span>
-    </legend>
-
-        <div id="payment-validation-container" aria-live="assertive">
-            <div class="validation-summary-valid" data-valmsg-summary="true"><ul><li style="display:none"></li>
-</ul></div>
-        </div>
-
-    <div id="payment_details_container" />
-
-    <script>
-
-    $(function () {
-        loadPaymentDetailsContainer(true);
-    });
-
-    if (!window.displayOnlinePaymentResult_callback) displayOnlinePaymentResult_callback = function() { };
-
-    //Used to remove iframe and display result.
-    function displayOnlinePaymentResult(hpsid) {
-        hideErrors('payment-validation-container');
-        $("#payment_container > iframe").remove();
-            $("#payment_details_container").empty();
-
-        var url = 'https://singlepermit.gov.mt/Payment/_onlinePaymentResult?id=8452b7ef-cd1c-4ba9-b950-db4b01a5f919&changeRequestID=&hpsid=' + hpsid + '&asApplicant=' + true;
-        $("#payment_details_container").load(url, function (response, status, xhr) {
-            if (status == "error") {
-                handleAjaxError(xhr, status, response);
-                loadPaymentDetailsContainer(); //If an error occurs iframe is still removed, however payment button and checkbox are reloaded.
-            } else {
-                //success
-                displayOnlinePaymentResult_callback();
-            }
-        });
-    }
-
-    function loadPaymentDetailsContainer(verifyWithTransactium, forceCancelActiveTransaction) {
-
-        verifyWithTransactium = verifyWithTransactium === true;
-        forceCancelActiveTransaction = forceCancelActiveTransaction === true;
-
-        $.ajax({
-            type: 'POST',
-            url: '/Payment/_loadPaymentDetails',
-            data: {
-                id: '8452b7ef-cd1c-4ba9-b950-db4b01a5f919',
-                changeRequestID: '',
-                verifyWithTransactium: verifyWithTransactium,
-                forceCancelActiveTransaction: forceCancelActiveTransaction,
- asApplicant: true,             },
-            success: function (result) {
-                $('#payment_details_container').empty();
-                $('#payment_details_container').append(result);
-            },
-            error: function (xhr, status, response) {
-                handleAjaxError(xhr, status, response);
-            }
-        });
-    }
-    </script>
-
-</fieldset>
-
-                    </div>
-
-                    <br />
-                    <script>
-                        $(document).ready(function () {
-                            $("#next").hide();
+                        var chkConfirm = $('#chkConfirmProceedToPayment');
+                        if (chkConfirm.length && !chkConfirm.is(':checked')) {
+                            chkConfirm.parent().hide().show('fast');
+                            displayError('Please tick to confirm and proceed with the payment.', 'payment-validation-container');
+                            return false;
+                        } else {
+                            $("#payment-important-notice").hide();
+                        }
+                    }
+        
+                    //change request - disable required hidden inputs to pass form validation
+                    var isVisibleTravelDoc = $('#travelDocSection').is(':hidden');
+                    if ('' != '') {
+                        disableTravelDocFields(isVisibleTravelDoc);
+                    }
+        
+        
+        
+                    if ('' == '' || $('#changeRequestForm').valid()) {
+        
+                        if ('' != '') {
+                            hideErrors('validation-container');
+                        }
+        
+                        var travelDoc = {
+                            No: $('#TravelDocument_No').val(),
+                            Type: $('#TravelDocument_Type').val(),
+                            IssueDate: $('#TravelDocument_IssueDate').val(),
+                            ValidTo: $('#TravelDocument_ValidTo').val(),
+                            Country: $('#TravelDocument_Country').val()
+                        }
+        
+                        $.ajax({
+                            type: 'POST',
+                            url: '/Payment/_renderPaymentGateway/8452b7ef-cd1c-4ba9-b950-db4b01a5f919',
+                            dataType: 'html',
+                            data: {
+                                changeRequestID: '', 
+                                forceCancelActiveTransaction: false,
+                                asApplicant: true,
+                                keepTravelDoc: $('#KeepTravelDocument').val() == 'True', 
+                                travelDoc: '' != '' ? travelDoc : null, 
+                                comments: $('#Comments').val() 
+                        },
+                            success: function (response, status, xhr) {
+                                var contentType = xhr.getResponseHeader("content-type");
+                                if ((/javascript/.test(contentType) && xhr.responseText != '')) { // In case the session has timed out and JS redirecting to SSO login page is returned.
+                                    eval(xhr.responseText);
+                                } else {
+                                    $("#payment_container").html(xhr.responseText);
+                                    $('#PaymentOptions').hide();
+                                    $("#payment_container").show();
+        
+        
+                                }
+                            },
+                            error: function (response, status, xhr) {
+                                handleAjaxError(response, status, xhr);
+                                loadPaymentDetailsContainer();
+                            }
                         });
-                    </script>
-                                        <div class="container-fluid margin-bottom-40">
-    <div class="row navigation-row">
-                                                    </div>
-</div>
+                    }
+                });
+        
+                //needed when payment is recovered and request is submitted
+                //This is a particulat scenario when the payment was done successfully but the process didn't finish and the request didn't change its status to Submitted.
+                //When the payment is recovered and the request is updated, we reload the page to ensure the screen is read-only and show a message to the user informing about the update.
+        
+                });
+        </script>
+        </div></fieldset>
+        
+                            </div>
 
-<style>
-    @media (max-width: 499px) {
-        .navigation-row > .col > button {
-            margin-bottom: 1rem;
-        }
-    }
+                            <br />
+                            <script>
+                                $(document).ready(function () {
+                                    $("#next").hide();
+                                });
+                            </script>
+                            <div class="container-fluid margin-bottom-40">
+                                <div class="row navigation-row">
+                                </div>
+                            </div>
 
-    @media (min-width: 500px) {
-        .navigation-row {
-            display: flex;
-            justify-content: end;
-        }
-    }
-</style>
+                            <style>
+                                @media (max-width: 499px) {
+                                    .navigation-row>.col>button {
+                                        margin-bottom: 1rem;
+                                    }
+                                }
 
+                                @media (min-width: 500px) {
+                                    .navigation-row {
+                                        display: flex;
+                                        justify-content: end;
+                                    }
+                                }
+                            </style>
+
+                        </div>
+                    </form>
                 </div>
-</form>        </div>
-    </div>
-</div>
+            </div>
+        </div>
 
     </section>
 
-    
 
 
-    <div id="cookienotice" style="display: none; text-align: center; color: rgba(40,40,40,1); padding-top: 20px; background-color: rgba(242, 242, 242, 0.975); position: fixed; width: 100%; top: 0px; left: 0; z-index: 1001; ">
-        <div style="display:inline-block; margin-right:20px; margin-left:20px; height:50px; margin-top: 1rem; padding-top: 1rem;">
-            This website uses cookies to provide necessary site functionality. By using this website, you agree to the use of cookies as outlined in <a href="https://singlepermit.gov.mt/Home/CookiesPolicy">Cookie Policy</a> and <a href="https://identita.gov.mt/privacy-statement" target="_blank">Privacy Policy</a>.
+
+    <div id="cookienotice"
+        style="display: none; text-align: center; color: rgba(40,40,40,1); padding-top: 20px; background-color: rgba(242, 242, 242, 0.975); position: fixed; width: 100%; top: 0px; left: 0; z-index: 1001; ">
+        <div
+            style="display:inline-block; margin-right:20px; margin-left:20px; height:50px; margin-top: 1rem; padding-top: 1rem;">
+            This website uses cookies to provide necessary site functionality. By using this website, you agree to the
+            use of cookies as outlined in <a href="https://singlepermit.gov.mt/Home/CookiesPolicy">Cookie Policy</a> and
+            <a href="https://identita.gov.mt/privacy-statement" target="_blank">Privacy Policy</a>.
         </div>
         <div style="display:inline-block; height:50px; margin-top: 1rem; margin-bottom: 2.5rem;">
-            <a tabindex="0" class="btn btn-primary bg-white-hover padding-left-15 padding-right-20" role="button" onclick="dismissCookieNotice();" style="text-decoration: none; font-weight: bold;">
-                <div class="valign-wrapper"><span class="msr msr-fill msr-red msr-arrow-circle-right msr-rot-270"></span></div><span class="margin-left-10 small-text">Got it!</span>
+            <a tabindex="0" class="btn btn-primary bg-white-hover padding-left-15 padding-right-20" role="button"
+                onclick="dismissCookieNotice();" style="text-decoration: none; font-weight: bold;">
+                <div class="valign-wrapper">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                        <!-- Circle background -->
+                        <circle cx="12" cy="12" r="10" fill="red" />
+
+                        <!-- Arrow pointing down (rotated 270 degrees) -->
+                        <path d="M13 19l-7-7 7-7" fill="none" stroke="white" stroke-width="2"
+                            transform="rotate(270 12 12)" />
+                    </svg>
+                </div>
+                <span class="margin-left-10 small-text">Got it!</span>
             </a>
         </div>
     </div>
@@ -747,12 +1027,20 @@ Triq ix-Xitwa
                     <span style="font-weight:600; font-family: 'Archia'; font-size: 1.1rem">© identit&#224;</span>
                 </div>
                 <div class="col-xs-12 col-lg-10 small-text footer-col footer-links-col">
-                    <a href="https://singlepermit.gov.mt/Home/PrivacyPolicy" aria-label="Go to Privacy Policy" style="font-weight:500" class="margin-right-20">Privacy Policy</a>
-                    <a href="https://singlepermit.gov.mt/Home/TermsAndConditions" aria-label="Go to Terms and Conditions" style="font-weight:500" class="margin-right-20">Terms And Conditions</a>
-                    <a href="https://singlepermit.gov.mt/Home/CookiesPolicy" aria-label="Go to Cookies Policy" style="font-weight:500" class="margin-right-20">Cookies Policy</a>
-                    <a href="https://singlepermit.gov.mt/Home/Disclaimer" aria-label="Go to Disclaimer" style="font-weight:500" class="margin-right-20">Disclaimer</a>
-                    <a href="https://singlepermit.gov.mt/Home/WebsiteAccessibility" aria-label="Go to Website Accesibility Statement" style="font-weight:500" class="margin-right-20">Website Accessibility Statement</a>
-                    <a href="https://singlepermit.gov.mt/News/Index" aria-label="Go to News" style="font-weight:500">News</a>
+                    <a href="https://singlepermit.gov.mt/Home/PrivacyPolicy" aria-label="Go to Privacy Policy"
+                        style="font-weight:500" class="margin-right-20">Privacy Policy</a>
+                    <a href="https://singlepermit.gov.mt/Home/TermsAndConditions"
+                        aria-label="Go to Terms and Conditions" style="font-weight:500" class="margin-right-20">Terms
+                        And Conditions</a>
+                    <a href="https://singlepermit.gov.mt/Home/CookiesPolicy" aria-label="Go to Cookies Policy"
+                        style="font-weight:500" class="margin-right-20">Cookies Policy</a>
+                    <a href="https://singlepermit.gov.mt/Home/Disclaimer" aria-label="Go to Disclaimer"
+                        style="font-weight:500" class="margin-right-20">Disclaimer</a>
+                    <a href="https://singlepermit.gov.mt/Home/WebsiteAccessibility"
+                        aria-label="Go to Website Accesibility Statement" style="font-weight:500"
+                        class="margin-right-20">Website Accessibility Statement</a>
+                    <a href="https://singlepermit.gov.mt/News/Index" aria-label="Go to News"
+                        style="font-weight:500">News</a>
                 </div>
             </div>
         </div>
@@ -764,9 +1052,9 @@ Triq ix-Xitwa
             margin-top: 1rem;
         }
 
-            .footer-col a:first-child {
-                margin-top: 2rem;
-            }
+        .footer-col a:first-child {
+            margin-top: 2rem;
+        }
 
         @media (min-width: 992px) {
             .footer-col a {
@@ -775,7 +1063,7 @@ Triq ix-Xitwa
         }
 
         @media(min-width: 1200px) {
-            footer > .container > .row {
+            footer>.container>.row {
                 display: flex;
                 flex-wrap: wrap;
                 align-items: center;
@@ -786,9 +1074,9 @@ Triq ix-Xitwa
                 text-align: right;
             }
 
-                .footer-col a:first-child {
-                    margin-top: 0rem;
-                }
+            .footer-col a:first-child {
+                margin-top: 0rem;
+            }
 
             .footer-links-col {
                 display: flex;
@@ -815,4 +1103,5 @@ Triq ix-Xitwa
         }
     </script>
 </body>
+
 </html>
